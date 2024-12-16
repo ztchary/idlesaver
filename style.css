@@ -1,0 +1,42 @@
+label {
+  display: inline-block;
+  width: 300px;
+  margin-right: 20px;
+  text-align: right;
+}
+.container {
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+  background: #181818;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #bbbbbb;
+  font: 20px 'Courier New', Courier, monospace;
+  font-weight: bold;
+  width: 100%;
+  background: #080808;
+}
+input {
+  color: #bbbbbb;
+  background: #181818;
+  accent-color: #088;
+  border: 2px solid #bbbbbb;
+  border-radius: 4px;
+}
+input[type=button] {
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+}
+#header {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+#values {
+  margin-top: 50px;
+}

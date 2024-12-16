@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IdleSaver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="header">
+      <h1>Idle Breakout Save Editor</h1>
+      <input type="button" id="e" value="export"></input>
+      <input type="button" id="i" value="import"></input>
+    </div>
+    <div id="general">
+      <h3>General</h3>
+      <label for="v0">level</label><input id="v0" type="text"><br>
+      <label for="v1">money</label><input id="v1" type="text"><br>
+      <label for="v2">gold</label><input id="v2" type="text"><br>
+      <label for="v3">gold on prestige</label><input id="v3" type="text"><br>
+      <label for="v104">black bricks</label><input id="v104" type="text"><br>
+      <label for="v109">skill points</label><input id="v109" type="text"><br>
+      <label for="v107">current bossfight</label><input id="v107" type="text"><br>
+      <label for="v108">boss brick level</label><input id="v108" type="text"><br>
+    </div>
+    <div id="settings">
+      <h3>Settings</h3>
+      <label for="v110">volume on</label><input id="v110" type="checkbox"><br>
+      <label for="v111">new sound fx</label><input id="v111" type="checkbox"><br>
+      <label for="v112">auto fight</label><input id="v112" type="checkbox"><br>
+      <label for="v12">bonus alerts</label><input id="v12" type="checkbox"><br>
+      <label for="v13">effects</label><input id="v13" type="checkbox"><br>
+      <label for="v11">ball facts</label><input id="v11" type="checkbox"><br>
+      <label for="v10">ball fact num</label><input id="v10" type="text"><br>
+      <label for="v105">cursor</label><input id="v105" type="text"><br>
+      <label for="v106">background</label><input id="v106" type="text"><br>
+    </div>
+    <div id="balls">
+      <h3>Balls</h3>
+      <label for="v28">basic balls</label><input id="v28" type="text"><br>
+      <label for="v29">plasma balls</label><input id="v29" type="text"><br>
+      <label for="v30">sniper balls</label><input id="v30" type="text"><br>
+      <label for="v31">scatter balls</label><input id="v31" type="text"><br>
+      <label for="v32">cannon balls</label><input id="v32" type="text"><br>
+      <label for="v33">poison balls</label><input id="v33" type="text"><br>
+      <label for="v34">snow balls</label><input id="v34" type="text"><br>
+      <label for="v35">money balls</label><input id="v35" type="text"><br>
+      <label for="v36">hidden balls</label><input id="v36" type="text"><br>
+    </div>
+    <div id="upgrades">
+      <h3>Upgrades</h3>
+      <label for="v37">basic speed upgrade</label><input id="v37" type="text"><br>
+      <label for="v38">basic power upgrade</label><input id="v38" type="text"><br>
+      <label for="v39">plasma range upgrade</label><input id="v39" type="text"><br>
+      <label for="v40">plasma power upgrade</label><input id="v40" type="text"><br>
+      <label for="v41">sniper speed upgrade</label><input id="v41" type="text"><br>
+      <label for="v42">sniper power upgrade</label><input id="v42" type="text"><br>
+      <label for="v43">scatter balls upgrade</label><input id="v43" type="text"><br>
+      <label for="v44">scatter power upgrade</label><input id="v44" type="text"><br>
+      <label for="v45">cannon speed upgrade</label><input id="v45" type="text"><br>
+      <label for="v46">cannon power upgrade</label><input id="v46" type="text"><br>
+      <label for="v47">poison speed upgrade</label><input id="v47" type="text"><br>
+      <label for="v48">poison power upgrade</label><input id="v48" type="text"><br>
+      <label for="v49">laser power upgrade</label><input id="v49" type="text"><br>
+      <label for="v50">hidden upgrade</label><input id="v50" type="text"><br>
+      <label for="v51">click multiplier level</label><input id="v51" type="text"><br>
+    </div>
+    <div id="powerups">
+      <h3>Powerups</h3>
+      <label for="v8">power ups available</label><input id="v8" type="text"><br>
+      <label for="v69">cashed up used</label><input id="v69" type="checkbox"><br>
+      <label for="v70">click frenzy used</label><input id="v70" type="checkbox"><br>
+      <label for="v71">demon core used</label><input id="v71" type="checkbox"><br>
+      <label for="v72">snow ball used</label><input id="v72" type="checkbox"><br>
+      <label for="v73">2x gold powerup used</label><input id="v73" type="checkbox"><br>
+    </div>
+    <div id="prestige">
+      <h3>Prestige</h3>
+      <label for="v52">level complete bonus</label><input id="v52" type="text"><br>
+      <label for="v53">ball speed increase</label><input id="v53" type="text"><br>
+      <label for="v54">ball power multiplier</label><input id="v54" type="text"><br>
+      <label for="v55">unlock vaus laser</label><input id="v55" type="text"><br>
+      <label for="v56">max number of balls</label><input id="v56" type="text"><br>
+    </div>
+    <div id="achievements">
+      <h3>Achievements</h3>
+      <label for="v57">basic 1 million damage</label><input id="v57" type="checkbox"><br>
+      <label for="v58">plasma 1 million damage</label><input id="v58" type="checkbox"><br>
+      <label for="v59">sniper 1 million damage</label><input id="v59" type="checkbox"><br>
+      <label for="v60">scatter 1 million damage</label><input id="v60" type="checkbox"><br>
+      <label for="v61">cannon 1 million damage</label><input id="v61" type="checkbox"><br>
+      <label for="v62">poison 1 million damage</label><input id="v62" type="checkbox"><br>
+      <label for="v63">use all power ups</label><input id="v63" type="checkbox"><br>
+      <label for="v64">prestige 5 times</label><input id="v64" type="checkbox"><br>
+      <label for="v65">have 10 of each ball</label><input id="v65" type="checkbox"><br>
+      <label for="v66">break 1000 black bricks</label><input id="v66" type="checkbox"><br>
+      <label for="v67">reach level 250</label><input id="v67" type="checkbox"><br>
+      <label for="v68">unlock all 4 lasers</label><input id="v68" type="checkbox"><br>
+    </div>
+    <div id="skills">
+      <h3>Skills</h3>
+      <label for="v74">skill 0, 0</label><input id="v74" type="checkbox"><br>
+      <label for="v75">skill 0, 1</label><input id="v75" type="checkbox"><br>
+      <label for="v76">skill 0, 2</label><input id="v76" type="checkbox"><br>
+      <label for="v77">skill 0, 3</label><input id="v77" type="checkbox"><br>
+      <label for="v78">skill 0, 4</label><input id="v78" type="checkbox"><br>
+      <label for="v79">skill 1, 0</label><input id="v79" type="checkbox"><br>
+      <label for="v80">skill 1, 1</label><input id="v80" type="checkbox"><br>
+      <label for="v81">skill 1, 2</label><input id="v81" type="checkbox"><br>
+      <label for="v82">skill 1, 3</label><input id="v82" type="checkbox"><br>
+      <label for="v83">skill 1, 4</label><input id="v83" type="checkbox"><br>
+      <label for="v84">skill 2, 0</label><input id="v84" type="checkbox"><br>
+      <label for="v85">skill 2, 1</label><input id="v85" type="checkbox"><br>
+      <label for="v86">skill 2, 2</label><input id="v86" type="checkbox"><br>
+      <label for="v87">skill 2, 3</label><input id="v87" type="checkbox"><br>
+      <label for="v88">skill 2, 4</label><input id="v88" type="checkbox"><br>
+      <label for="v89">skill 3, 0</label><input id="v89" type="checkbox"><br>
+      <label for="v90">skill 3, 1</label><input id="v90" type="checkbox"><br>
+      <label for="v91">skill 3, 2</label><input id="v91" type="checkbox"><br>
+      <label for="v92">skill 3, 3</label><input id="v92" type="checkbox"><br>
+      <label for="v93">skill 3, 4</label><input id="v93" type="checkbox"><br>
+      <label for="v94">skill 4, 0</label><input id="v94" type="checkbox"><br>
+      <label for="v95">skill 4, 1</label><input id="v95" type="checkbox"><br>
+      <label for="v96">skill 4, 2</label><input id="v96" type="checkbox"><br>
+      <label for="v97">skill 4, 3</label><input id="v97" type="checkbox"><br>
+      <label for="v98">skill 4, 4</label><input id="v98" type="checkbox"><br>
+      <label for="v99">skill 5, 0</label><input id="v99" type="checkbox"><br>
+      <label for="v100">skill 5, 1</label><input id="v100" type="checkbox"><br>
+      <label for="v101">skill 5, 2</label><input id="v101" type="checkbox"><br>
+      <label for="v102">skill 5, 3</label><input id="v102" type="checkbox"><br>
+      <label for="v103">skill 5, 4</label><input id="v103" type="checkbox"><br>
+    </div>
+    <div id="statsa">
+      <h3>Stats (all time)</h3>
+      <label for="v14">run started</label><input id="v14" type="text"><br>
+      <label for="v15">time to lvl one hundred</label><input id="v15" type="text"><br>
+      <label for="v4">prestige count</label><input id="v4" type="text"><br>
+      <label for="v6">bricks broken</label><input id="v6" type="text"><br>
+      <label for="v7">black bricks</label><input id="v7" type="text"><br>
+      <label for="v9">bricks clicked</label><input id="v9" type="text"><br>
+      <label for="v17">basic balls damage</label><input id="v17" type="text"><br>
+      <label for="v19">plasma balls damage</label><input id="v19" type="text"><br>
+      <label for="v21">sniper balls damage</label><input id="v21" type="text"><br>
+      <label for="v23">scatter balls damage</label><input id="v23" type="text"><br>
+      <label for="v25">cannon balls damage</label><input id="v25" type="text"><br>
+      <label for="v27">poison balls damage</label><input id="v27" type="text"><br>
+    </div>
+    <div id="statsp">
+      <h3>Stats (this prestige)</h3>
+      <label for="v5">bricks broken</label><input id="v5" type="text"><br>
+      <label for="v16">basic balls damage</label><input id="v16" type="text"><br>
+      <label for="v18">plasma balls damage</label><input id="v18" type="text"><br>
+      <label for="v20">sniper balls damage</label><input id="v20" type="text"><br>
+      <label for="v22">scatter balls damage</label><input id="v22" type="text"><br>
+      <label for="v24">cannon balls damage</label><input id="v24" type="text"><br>
+      <label for="v26">poison balls damage</label><input id="v26" type="text"><br>
+    </div>
+  </div>
+  <script src="values.js"></script>
+  <script src="script.js"></script>
+  <style>
+  </style>
+</body>
+</html>
